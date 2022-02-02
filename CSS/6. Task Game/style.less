@@ -1,0 +1,148 @@
+    @textColor: #361157;
+    @textFont: Verdana, Geneva, Tahoma, sans-serif;
+    @colorOfTheElements: #e1d8e2;
+
+body{
+    margin: 0;
+    background-image:url("image/Background.png");
+}
+
+
+button{
+    position: relative;
+    width: 800px;
+    height: 80px;
+    left:335px;
+    top: 304px;
+
+    border-radius: 25px;
+    opacity: 80%;
+    background-color: @colorOfTheElements;
+    border-color:@colorOfTheElements;
+
+    font-family: @textFont;
+    font-weight: bold;
+    font-size: 35.95px;
+    color: @textColor;
+    text-transform: uppercase;
+
+    cursor:pointer;
+}
+
+#score{
+    position: relative;
+    width: 200px;
+    height: 58px;
+
+    border-radius: 0 0 20px 0;
+    opacity: 80%;
+    background-color: @colorOfTheElements;
+    border-color: @colorOfTheElements;
+
+    span{
+        position: relative;
+        font-family: @textFont;
+        font-weight: bold;
+        color: @textColor;
+        text-align:center;
+    }
+
+    :first-child{
+        font-size: 18px;
+        left: 33px;
+        top: 9px;
+    }
+
+    :last-child{
+        font-size: 14px;
+        left: 28px;
+        top: 10px;
+    }
+}
+
+#reset{
+    position: relative;
+    width: 100px;
+    height: 58px;
+    left:1419px;
+    bottom:58px;
+
+    border-radius: 0 0 0 20px ;
+    opacity: 80%;
+    background-color: @colorOfTheElements;
+    border-color: @colorOfTheElements;
+
+    img{
+        position: relative;
+        left: 29px;
+        top: 10px;
+    }
+}
+
+#timer{
+    position: relative;
+    width: 760px;
+    height: 15px;
+    background: #dadae3;
+    border-radius: 20px;
+    left: 370px;
+    bottom: 90px;
+}
+
+#timer div{
+    position: relative;
+    width: 500px;
+    height: 15px;
+    background: #361157;
+    border-radius: 20px;
+    animation: fillind 4s 1s 5  linear;
+  }
+  
+  @keyframes filling{
+   0%{background:#361157;width:7px;}
+   25%{background:#361157;width:200px;}
+   50%{background:#361157;width:500px;}
+   100%{background:#361157;width:760px;}
+  
+  }
+  
+
+#playGround{
+    position: relative;
+    width: 1125px;
+    height: 628px;
+    left: 186px;
+    bottom:48px;
+
+    border-radius: 25px;
+    opacity: 80%;
+    background-color: @colorOfTheElements;
+    border-color:@colorOfTheElements;
+
+    #firstRow{
+
+        position: relative;
+        left: 35px;
+        top: 14px;
+    }
+
+    #secondRow{
+        position: relative;
+        left: 35px;
+    }
+
+    #thirdRow{
+        position: relative;
+        left: 35px;
+    }
+
+    img{
+        padding: 0 40px 30px 0;
+    }
+
+    img:hover{
+		transform:rotateX(90deg);
+		transition: 1s;
+    }
+
+}

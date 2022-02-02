@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+
+
+    <div class="calcWrapper">
+        <div>
+            <div class="calcButton" onclick="onNumberClicked(1)">1</div>
+            <div class="calcButton"onclick="onNumberClicked(2)">2</div>
+            <div class="calcButton"onclick="onNumberClicked(3)">3</div>
+            <div class="calcButton"onclick="onNumberClicked(4)">4</div>
+            <div class="calcButton"onclick="onNumberClicked(5)">5</div>
+            <div class="calcButton"onclick="onNumberClicked(6)">6</div>
+            <div class="calcButton"onclick="onNumberClicked(7)">7</div>
+            <div class="calcButton"onclick="onNumberClicked(8)">8</div>
+            <div class="calcButton"onclick="onNumberClicked(9)">9</div>
+            <div class="calcButton calcButtonZero"onclick="onNumberClicked(0)">0</div>
+        </div>
+        <div class="calcSignWrapper">
+            <div class="calcButton" onclick="onPlusClicked()">+</div>
+            <div class="calcButton" onclick="onEqualCliked()">=</div>
+        </div>
+    </div>
+
+    
+
+    <script>
+    
+        var isSecondNumber = false;
+        var numA=0;
+        var numB=0;
+
+        function onNumberClicked(number){
+            if(isSecondNumber){
+                numB=numB*10+ number;
+                document.title = numB;
+            }else{
+                numA=numA*10+ number;
+                document.title = numA;
+            }
+        }
+
+        function onPlusClicked(){
+            isSecondNumber= true;
+            numA=numA +numB;
+            numB=0;
+            document.title='_';
+        }
+
+        function onEqualCliked(){
+            isSecondNumber = false;
+            document.title = Number(numA) + Number(numB);
+        }
+   </script>
+    
+</body>
+</html>

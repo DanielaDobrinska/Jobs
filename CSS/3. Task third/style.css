@@ -1,0 +1,254 @@
+@font-face{
+      font-family:"D-DIN-Bold";
+      src: url("fonts/D-DIN-Bold.woff2");
+}
+
+@font-face{
+    font-family:"D-DIN";
+    src: url("fonts/D-DIN.woff2");
+}
+
+body{
+    margin:0px;
+}
+
+/*Header styling*/
+
+header{
+    position:sticky ;
+    top: 0;
+    left: 0;
+    width:100%;
+    background-color:black;
+   /* opacity: 0.1;*/
+}
+
+
+#imageLogo{
+    position: absolute;
+    top:20%;
+    left:12%;
+
+}
+
+#navigationLinks a{
+    position: relative;
+    display: inline-block;
+    padding: 1.4% 0.5%;
+    left: 31%;
+
+    font-size: 16px;
+    font-family: D-DIN-Bold;
+    color: white;
+    text-decoration: none;
+}
+
+#navigationLinks a:hover{
+    text-decoration: underline;
+}
+
+ #additionalMenu a{
+    position: absolute;
+    display:inline-block;
+    left: 92%;
+    bottom: 35%;
+
+    font-size: 16px;
+    font-family: D-DIN-Bold;
+    color: white;
+    text-decoration:none ;
+}
+
+
+/*Main Picture and title*/
+
+#mainPicture{
+    width: 100%;
+}
+
+h1{
+    position: absolute;
+    left: 37%;
+    top: 28%;
+
+    color: white;
+    font-size: 103px;
+    font-family: D-DIN-Bold;
+}
+
+h1+h2{
+    position: absolute;
+    left: 35.5%;
+    top:52%;
+
+    color:white;
+    font-size: 21px;
+    font-family:D-DIN;
+}
+
+/*                         */
+
+#specificFlacon{
+    display: inline-block;
+}
+
+#specificFlacon img{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+}
+
+#specificFlacon p{
+    position:relative;
+    padding-left:30%;
+    padding-right: 37%;
+    top:150px;
+    right: 335px;
+
+    font-size: 20px;
+    font-family: D-DIN, Verdana, Tahoma, sans-serif;
+    line-height: 43px;
+    color:white;
+}
+
+/*Overview Flocon*/
+
+#overviewFlacon img{
+    position:absolute;
+    display: inline-block;
+    
+    top:1466px;
+    width: 100%;
+}
+
+#flocanTitle{
+    position: relative;
+    display:inline-block;
+    top:300px;
+    left:85px;
+    color:white;
+    font-family: D-DIN;
+    font-size:30px;
+}
+
+#flocanTitle h3{
+    font-size:25px;
+    font-family: sans-serif;
+    display: inline-block;
+   margin-bottom: 0;
+}
+
+/* Table for Folcon information*/
+
+#floconTable{
+    position: relative;
+    display: inline-block;
+    top: 641px;
+    right: 121px;
+
+    color:white;
+}
+
+td{
+    border-bottom: 2px solid grey;
+}
+
+.nameParameters{
+    padding-right:250px ;
+    padding-bottom: 15px;
+    padding-top:15px;
+    text-align: left;
+    font-family: D-DIN-Bold;
+}
+
+.parameters{
+    text-align: right;
+}
+
+.boldParameters{
+    font-family: D-DIN-Bold;
+}
+
+.boldParameters+span{
+    font-family: D-DIN-Bold;
+    color: grey;
+}
+
+/*Video element*/
+
+video{
+    position: absolute;
+    width: 100%;
+    top:2160px;
+}
+
+#videoTitle{
+    position: relative;
+    display: inline-block;
+    left: 66px;
+    top:1100px;
+
+    color: white;
+    font-family: D-DIN;
+    font-size: 30px;
+}
+
+/*Matlin information*/
+
+#infoMarlin img{
+    position:absolute;
+    display: inline-block;
+    top:2860px;
+    width: 100%;
+}
+
+#MarlinTitle{
+    position: relative;
+    display:inline-block;
+    left: 50px;
+    top: 1345px;
+
+    color:white;
+    font-family: D-DIN;
+    font-size:30px;
+}
+
+#MarlinTitle h2{
+    position: relative;
+    display:inline-block;
+    margin-top:0;
+    bottom:33px;
+}
+
+#SelectType{
+    position: relative;
+    display: inline-block;
+    top:1356px;
+    right:62px;
+
+    color:white;
+    font-family: D-DIN-Bold;
+    font-size:20px; 
+}
+
+#SelectType+p{
+    position: relative;
+    display: inline-block;
+    padding-right: 598px;
+    padding-left: 300px;
+    right: 239px;
+    top: 1340px;
+    
+    color: white;
+    font-size: 18px; 
+    line-height: 28px;
+}
+
+#MarlinTable{
+    position: relative;
+    display: inline-block;
+    top: 1348px;
+    left: 62px;
+
+    color:white;
+}

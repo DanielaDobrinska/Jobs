@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event odd</title>
+</head>
+<body>
+    <script>
+        var students=["Gosho","Thosho","Pesho","Ivan","Nikolay","Boris","Atanas"];
+        oddStudent = [];
+        evenStudent = [];
+
+        for(var i=0; i<students.length;i++);{
+            if(i%2 == 0){
+                oddStudent.push(students[i]);
+            }else{
+                evenStudent.push(students[i]);
+            }
+                
+        }
+        console.log("oddStudent:", oddStudent, "Gosho, Pesho,Nikolay,Atanas");
+        console.log("evenStudent:", evenStudent, "Thosho,Ivan,Boris");
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

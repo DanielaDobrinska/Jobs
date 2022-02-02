@@ -1,0 +1,143 @@
+/* Header file*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: #2980b9;
+}
+
+.linksNavigation{
+    margin-left: 500px;
+    text-align: center;
+}
+
+.linksNavigation a{
+    position: relative;
+    display: inline-block;
+    bottom: 30px;
+    right: 80px;
+    color:white;
+    padding-left: 80px;
+}
+
+/* Common to all pages*/
+body{
+   
+    width: 100%;
+    top:0;
+    left:0;
+    background-color: #34495e;
+}
+
+
+iframe{
+    position: relative;
+    bottom:10px;
+    right:10px;
+}
+
+
+main{
+    position:relative;
+    bottom: 88px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 30px 80px;
+    background-color: white;
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#mainNavigation {
+    color: #2980b9;
+}
+
+/*Homepage style */
+
+#mainInformationSolarSystem{
+    display:inline-block;
+    padding-right:550px;
+}
+
+#imageSolarSystem{
+    position:absolute;
+    left:680px;
+    top: 280px;
+}
+
+ol{
+    font-style: italic;
+}
+
+/*Mercury style*/
+
+#informationMercury{
+    display: inline-block;
+    padding-right: 500px;
+}
+
+#imageMercury{
+    position: absolute;
+    left: 760px;
+    top:170px;
+    height: 330px;
+}
+
+img+iframe{
+    display: inline-block;
+    top:50px;
+}
+
+#moreInfoMercury{
+    position: relative;
+    padding-left:570px;
+    bottom: 280px;
+
+}
+
+
+/*Earth style*/
+
+#imageEarth{
+    position: absolute;
+    height: 400px;
+}
+
+img+p{
+    position: relative;
+    padding-left:550px;
+    padding-top: 57px;
+}
+
+video{
+    position: relative;
+    top:150px;
+    left: 111px;
+    padding-bottom: 180px;
+}
+
+/* Jupiter style*/
+
+#externalSite{
+    left: 27px;
+    top: 20px;
+    border: 3px solid #2980b9;
+}
+
+
+/*Gallery*/
+
+table{
+    position:relative;
+    left:20px;
+}
+
+td a{
+
+}

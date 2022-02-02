@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+}
+
+main{
+	background-color:#34495e;
+	font-family: Verdana;
+}
+
+h1{
+	font-size: 25px;
+	color: white;
+	margin: 3px;
+}
+
+#userInformation{
+	padding-bottom: 60px;
+	height:130px;
+	display:flex;
+	flex-direction: row;
+	list-style-type: none;	
+
+}
+
+.mainInfo{
+	background-color: #e74c3c;
+	margin-bottom: 30px;
+	margin-right: 100px;
+}
+
+.moreInfo{
+	display:inline-block;
+	list-style-type: none;
+   	width: 220px;
+	position: relative;
+	bottom: 5px;
+}
+
+
+li>img{
+	position:relative;
+	left:3px;
+	top:4px;
+}
+
+.userName{
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+.collectedData{
+	color: white;
+	font-size: 14px;
+}
+
+li>span{
+	color: #f1c40f;
+}
+
+
+
+
+
+
+
+
+

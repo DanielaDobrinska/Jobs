@@ -1,0 +1,309 @@
+/* --- Hero image --- */
+
+#hero-image{
+   background-image: url('../images/heroImage.webp');
+   height: 100vh; /* -- https://www.w3schools.com/cssref/tryit.asp?filename=trycss_unit_vh  (има и vw мерна единица)*/
+   /* алтернативен начин е да зададете финксирана височина (промерно 960px)  */
+   background-position: top center;
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+}
+
+#hero-image .text-wrapper{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-top: 330px;
+    text-align: center;
+}
+
+#hero-image h1{
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+
+/* --- Statistics --- */
+
+#rocket-statistics{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#rocket-statistics table{
+    width: 100%;
+}
+
+#rocket-statistics tbody{
+    font-size: 140px;
+}
+
+#rocket-statistics td{
+    text-align: center;
+}
+
+#rocket-statistics tfoot{
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+/* --- Rocket overview --- */
+
+#rocket-segment{
+    position: relative;
+    height: 1000px;
+
+    background-image: url('../images/wireframe_rocket.webp');
+    background-position: center bottom;
+    background-size: contain; /* Можете да го направите и с конкретни размери. Повече за "cover": https://www.w3schools.com/cssref/css3_pr_background-size.asp*/
+    background-repeat: no-repeat;
+}
+
+.floating-paragraph{
+    position: absolute;
+    top: 350px;
+    width: 27%;
+}
+
+/* --- Parameters --- */
+
+#rocket-parameters{
+    position: relative;
+    height: 1000px;
+    background-image: url('../images/roclet_3dRender.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#rocket-parameters .parameters{
+    display: inline-block;
+    width: 40%;
+    margin-top: 300px;
+}
+
+#rocket-parameters .parameters h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#rocket-parameters .parameters h2{
+    font-size: 60px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.data-table{
+    width: 100%;
+    border-collapse: collapse; /* Премахва разстоянието между клетките */
+}
+
+.carosel-navigation{
+    position: absolute;
+    height: 40px;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    padding: 0 5%;
+}
+
+.arrow-button{
+    height: 44px;
+    width: 27px;
+    background-image: url('../images/arrow.jpg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.right-arrow{
+    transform: rotateY(180deg);
+}
+
+.carosel-navigation .left-arrow{
+    float: left;
+}
+
+.carosel-navigation .right-arrow{
+    float: right;
+}
+
+.arrow-inactive{
+    cursor: default;
+    opacity: 0.3;
+}
+
+.dots-wrapper{
+    width: calc(100% - 60px); /* --- 100% - 2 arrows */
+    float:left;
+    text-align: center;
+}
+
+.dot{
+    height: 8px;
+    width: 8px;
+    padding: 0;
+    margin: 0 3px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.dot.active{
+    opacity: 1;
+}
+
+
+/* --- Video --- */
+
+#rocket-video{
+    position: relative;
+    height: 1000px;
+    background-image: url('../images/falcon_in_flight.webp');
+    background-size: cover;
+}
+
+#rocket-video .title-wrapper{
+    display: inline-block;
+    margin-top: 660px;
+}
+
+#rocket-video h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#rocket-video h3{
+    font-size: 60px;
+    text-transform: uppercase;
+    width: 450px;;
+    margin: 10px;
+}
+
+/* --- Може и просто с картинка, но така е по-интересно :) */
+.play-button{
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 450px;
+    background: none;
+    height: 0;
+    width: 0;
+    border: 40px solid transparent;
+    border-left-color: #fff;
+    transform: rotateX(50deg);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.play-button:hover{
+    transform: scale(0.8) translate(-10px) rotateX(50deg);
+}
+
+
+/* --- Engines details --- */
+#engines-details{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    padding:0;
+}
+
+/* --- Image gallery ---*/
+
+#rocket-images{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    padding:0;
+    padding-bottom: 20px;
+}
+
+.gallery-wrapper{
+    height: 950px;
+    overflow: hidden;
+}
+
+.gallery-item{
+    width: 100%;
+    height: auto;
+}
+
+#rocket-images .carosel-navigation{
+    text-align: center;
+}
+
+/* --- Additional info --- */
+
+#rocket-additional-info{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.vertical-bar{
+    height: 150px;
+    width: 1px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: #fff;
+}
+
+.contact-information{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #919191;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-information a{
+    color: #fff;
+}
+
+.buttons-wrapper{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.action-button{
+    position: relative;
+    background-color: transparent;
+    padding: 15px; 
+    margin: 0 10px; 
+    border: 2px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: color 0.2s ease-in-out;
+}
+
+.action-button span{
+    position: relative;
+    z-index: 1;
+}
+
+.action-button .background{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0%;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+.action-button:hover{
+    color: #000;
+}
+
+.action-button:hover .background{
+    height: 100%;
+}
